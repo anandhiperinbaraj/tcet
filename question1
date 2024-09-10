@@ -1,0 +1,13 @@
+package Tcettest;
+interface Sayable{
+	String say(String message);
+}
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		Sayable sayable=(message)->"Hello,"+message;
+		System.out.println(Sayable.say("john"));
+	}
+
+}
