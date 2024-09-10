@@ -1,0 +1,28 @@
+package Tcettest;
+import java.util.Arrays;
+
+public class Question4 {
+	public static void main(String[] args)
+	{
+		int[] crates={1,0,2,0,3,0,4,5};
+		Question4{crates};
+		System.out.println("Array after moving zeros to the end:" +Arrays.toString(crates));
+	}
+	public static void Question4(int[] crates)
+	{
+		int nonZeroIndex =0;
+		for(int i=0;i<crates.length;i++)
+		{
+			if(crates[i]!=0)
+			{
+				crates[nonZeroIndex]=crates[i];
+				nonZeroIndex++;
+			}
+		}
+		for(int i=nonZeroIndex;i<crates.length;i++)
+		{
+			crates[i]=0;
+		}
+	}
+
+}
